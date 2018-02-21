@@ -6,6 +6,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
   imports: [
     CommonModule
   ],
-  declarations: [ToolbarComponent]
+  declarations: [ToolbarComponent],
+  exports:[ToolbarComponent]
 })
 export class ToolbarModule { }

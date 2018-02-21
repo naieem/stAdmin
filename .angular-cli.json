@@ -20,20 +20,7 @@
         "styles": [
             "styles.css"
         ],
-        "scripts": [
-            "bower_components/jquery/dist/jquery.min.js",
-            "bower_components/jquery-ui/jquery-ui.min.js",
-            "bower_components/bootstrap/dist/js/bootstrap.min.js",
-            "bower_components/raphael/raphael.min.js",
-            "bower_components/morris.js/morris.min.js",
-            "bower_components/jquery-sparkline/dist/jquery.sparkline.min.js",
-            "bower_components/jquery-knob/dist/jquery.knob.min.js",
-            "bower_components/moment/min/moment.min.js",
-            "bower_components/bootstrap-daterangepicker/daterangepicker.js",
-            "bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js",
-            "bower_components/jquery-slimscroll/jquery.slimscroll.min.js",
-            "bower_components/fastclick/lib/fastclick.js"
-        ],
+        "scripts": [],
         "environmentSource": "environments/environment.ts",
         "environments": {
             "dev": "environments/environment.ts",
