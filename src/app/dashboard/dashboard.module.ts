@@ -13,7 +13,7 @@ const DashboardRoute: Routes = [
     RouterModule.forChild(DashboardRoute)
   ],
   declarations: [DashboardComponent],
-  exports:[
+  exports: [
     DashboardComponent
   ]
 })

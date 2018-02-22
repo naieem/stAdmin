@@ -1,20 +1,36 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardModule } from '../dashboard/dashboard.module';
+
+// ======================================
+// Business module declaration block
+// ======================================
+import { DashboardModule } from '../../Business_Modules/dashboard/dashboard.module';
 import { ErrorModule } from '../error/error.module';
+// ======================================
+// Business component declaration block
+// ======================================
 import { ErrorComponent } from '../error/error/error.component';
+
+
+// ======================================
+// Route configuration block
+// ======================================
 const appRoutes: Routes = [
   {
-    path:'',
-    loadChildren: 'app/dashboard/dashboard.module#DashboardModule',
+    path: '',
+    loadChildren: '../../Business_Modules/dashboard/dashboard.module#DashboardModule',
   },
-  { 
+  {
     path: '**',
-    component:ErrorComponent
+    component: ErrorComponent
   }
 ];
 
+
+// ======================================
+// nucleaus of the module
+// ======================================
 @NgModule({
   imports: [
     CommonModule,
@@ -30,6 +46,11 @@ const appRoutes: Routes = [
     RouterModule
   ],
 })
+
 export class AppRoutingModule { }
 
-export const RouteModules=[ErrorModule,DashboardModule];
+/**
+ * Exporting all business modules to use in the grandparent module
+ * @param [modules]
+ */
+export const RouteModules = [ErrorModule, DashboardModule];
