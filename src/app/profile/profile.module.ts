@@ -6,6 +6,7 @@ import { ProfileComponent } from './profile/profile.component';
   imports: [
     CommonModule
   ],
-  declarations: [ProfileComponent]
+  declarations: [ProfileComponent],
+  exports: [ProfileComponent]
 })
 export class ProfileModule { }
